@@ -1,0 +1,14 @@
+OSI 
+https://en.wikipedia.org/wiki/OSI_model
+
+Tecnologias Ethernet em par trançado
+https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair
+
+Exemplos de protocolo de roteamento
+RIP: https://en.wikipedia.org/wiki/Routing_Information_Protocol
+
+EIGRP: https://en.wikipedia.org/wiki/Enhanced_Interior_Gateway_Routing_Protocol
+
+OSPF: https://en.wikipedia.org/wiki/Open_Shortest_Path_First
+
+BGP: https://en.wikipedia.org/wiki/Border_Gateway_Protocol
