@@ -1,0 +1,29 @@
+Portas do sistema versus portas efêmeras
+Os protocolos da camada de transporte usam um conceito de portas e multiplexação/desmultiplexação para 
+fornecer dados individualmente a serviços que "escutam" nos nós da rede. Essas portas são representadas 
+por um único número de 16 bits, o que significa que elas podem representar os números de 0 a 65535.
+
+Esse intervalo foi dividido pela IANA em seções independentes:
+
+A porta 0 não está sendo usada para tráfego de rede, mas às vezes é usada em comunicações entre 
+diferentes programas no mesmo computador.
+
+As portas 1 a 1023 são conhecidas como portas do sistema ou, às vezes, como "portas conhecidas". Essas 
+são as portas oficiais para os serviços de rede mais conhecidos. Em outro vídeo, falamos sobre como o
+ HTTP normalmente se comunica pela porta 80, enquanto que o FTP geralmente usa a porta 21. Na maioria 
+ dos sistemas operacionais, o acesso de nível de administrador é necessário para iniciar um programa 
+ que escuta em uma porta do sistema.
+
+As portas 1024 a 49151 são conhecidas como portas registradas. Essas portas são usadas para muitos 
+outros serviços de rede que podem não ser tão comuns quanto os que estão nas portas do sistema. Um bom 
+exemplo de porta registrada é a 3306, que é a porta que muitos bancos de dados escutam. Às vezes, 
+portas registradas são oficialmente registradas e reconhecidas pela IANA, mas nem sempre. Na maioria 
+dos sistemas operacionais, qualquer usuário com qualquer nível de acesso pode iniciar um programa que 
+escuta em uma porta registrada.
+
+E, por fim, temos as portas 49152 a 65535. Essas são conhecidas como portas privadas ou efêmeras. 
+As portas efêmeras não podem ser registradas junto à IANA e geralmente são usadas para estabelecer 
+conexões de saída. Você deve lembrar que todo o tráfego do TCP usa uma porta de destino e uma porta de 
+origem. Quando um cliente quer se comunicar com um servidor, o cliente recebe acesso a uma porta 
+efêmera que será usada apenas por uma conexão, enquanto que o servidor escuta em um sistema estático 
+ou porta registrada.
